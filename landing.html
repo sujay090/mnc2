@@ -1,0 +1,1075 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DigitalPro - We Design Your Digital Success</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="https://unpkg.com/swiper@11/swiper-bundle.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+    <link rel="stylesheet" href="./styles.css">
+</head>
+<body class="dark-theme">
+    <!-- Theme Toggle -->
+    <div class="theme-toggle" id="themeToggle">
+        <div class="toggle-track">
+            <div class="toggle-thumb">
+                <i class="fas fa-sun light-icon"></i>
+                <i class="fas fa-moon dark-icon"></i>
+            </div>
+        </div>
+    </div>
+
+    <!-- Cursor Trail -->
+    <div class="cursor-trail" id="cursorTrail"></div>
+    
+    <!-- Floating Particles -->
+    <div class="particles-container" id="particles"></div>
+    <!-- Navigation -->
+    <nav id="navbar" class="navbar">
+        <div class="nav-container">
+            <div class="nav-content">
+                <div class="logo">
+                    <h1 class="logo-text" data-aos="fade-right">GS3 <span class="logo-accent">Solution</span></h1>
+                    <div class="logo-underline"></div>
+                </div>
+                
+                <div class="nav-links">
+                    <a href="#home">Home</a>
+                    <a href="#services">Services</a>
+                    <a href="#portfolio">Portfolio</a>
+                    <a href="#careers">Careers</a>
+                    <a href="#contact">Contact</a>
+                </div>
+                
+                <div class="nav-cta">
+                    <a href="#contact" class="btn btn-primary">Get Started</a>
+                </div>
+                
+                <div class="mobile-menu-btn" id="mobileMenuBtn">
+                    <i class="fas fa-bars"></i>
+                </div>
+            </div>
+            
+            <div class="mobile-menu" id="mobileMenu">
+                <a href="#home">Home</a>
+                <a href="#services">Services</a>
+                <a href="#portfolio">Portfolio</a>
+                <a href="#careers">Careers</a>
+                <a href="#contact">Contact</a>
+                <a href="#contact" class="btn btn-primary">Get Started</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-bg">
+            <div class="floating-element floating-1" data-aos="fade-up" data-aos-delay="100"></div>
+            <div class="floating-element floating-2" data-aos="fade-up" data-aos-delay="200"></div>
+            <div class="floating-element floating-3" data-aos="fade-up" data-aos-delay="300"></div>
+            
+            <!-- Multiple Moving UFOs -->
+            <div class="ufo-container">
+                <!-- UFO 1 - Large Primary -->
+                <div class="ufo ufo-1">
+                    <div class="ufo-body">
+                        <div class="ufo-dome"></div>
+                        <div class="ufo-base"></div>
+                        <div class="ufo-lights">
+                            <div class="light light-1"></div>
+                            <div class="light light-2"></div>
+                            <div class="light light-3"></div>
+                            <div class="light light-4"></div>
+                            <div class="light light-5"></div>
+                        </div>
+                    </div>
+                    <div class="ufo-beam"></div>
+                </div>
+                
+                <!-- UFO 2 - Medium Secondary -->
+                <div class="ufo ufo-2">
+                    <div class="ufo-body">
+                        <div class="ufo-dome"></div>
+                        <div class="ufo-base"></div>
+                        <div class="ufo-lights">
+                            <div class="light light-1"></div>
+                            <div class="light light-2"></div>
+                            <div class="light light-3"></div>
+                        </div>
+                    </div>
+                    <div class="ufo-beam"></div>
+                </div>
+                
+                <!-- UFO 3 - Small Tertiary -->
+                <div class="ufo ufo-3">
+                    <div class="ufo-body">
+                        <div class="ufo-dome"></div>
+                        <div class="ufo-base"></div>
+                        <div class="ufo-lights">
+                            <div class="light light-1"></div>
+                            <div class="light light-2"></div>
+                            <div class="light light-3"></div>
+                            <div class="light light-4"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="hero-gradient"></div>
+            <canvas id="starfield" class="starfield"></canvas>
+        </div>
+        
+        <div class="container">
+            <div class="hero-content">
+            <h1 class="hero-title" data-aos="fade-up" data-aos-delay="400">
+                We Design Your <span class="gradient-text typing-animation">Digital Success</span>
+            </h1>
+            <p class="hero-subtitle" data-aos="fade-up" data-aos-delay="600">
+                We create stunning digital experiences that drive growth for multinational companies. 
+                From UI/UX design to full-stack development, we're your global digital partner.
+            </p>
+            <div class="hero-buttons" data-aos="fade-up" data-aos-delay="800">
+                <a href="#contact" class="btn btn-primary btn-glow">
+                    <span class="btn-content">
+                        Start Your Project <i class="fas fa-arrow-right"></i>
+                    </span>
+                    <div class="btn-particles"></div>
+                </a>
+                <a href="#portfolio" class="btn btn-secondary btn-outline">
+                    <span class="btn-content">View Our Work</span>
+                </a>
+            </div>
+            
+            <div class="hero-stats" data-aos="fade-up" data-aos-delay="1000">
+                <div class="stat-item">
+                    <div class="stat-number animate__animated animate__countUp">500+</div>
+                    <div class="stat-label">Projects</div>
+                </div>
+                <div class="stat-item">
+                    <div class="stat-number animate__animated animate__countUp">25+</div>
+                    <div class="stat-label">Countries</div>
+                </div>
+                <div class="stat-item">
+                    <div class="stat-number animate__animated animate__countUp">99%</div>
+                    <div class="stat-label">Satisfaction</div>
+                </div>
+            </div>
+            </div>
+        </div>
+        
+        <div class="scroll-indicator" data-aos="fade-up" data-aos-delay="1200">
+            <div class="scroll-mouse">
+                <div class="scroll-wheel"></div>
+            </div>
+            <span class="scroll-text">Scroll to explore</span>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services" class="services">
+        <div class="container">
+            <div class="section-header" data-aos="fade-up">
+                <span class="section-subtitle">What We Do</span>
+                <h2 class="section-title">Our Services</h2>
+                <p class="section-description">We offer comprehensive digital solutions to help your business thrive in the digital landscape</p>
+            </div>
+            
+            <div class="services-grid">
+                <div class="service-card" data-aos="flip-left" data-aos-delay="100">
+                    <div class="service-icon">
+                        <i class="fas fa-palette"></i>
+                        <div class="icon-bg"></div>
+                    </div>
+                    <h3>UI/UX Design</h3>
+                    <p>Creating intuitive and beautiful user experiences that convert visitors into customers with modern design principles.</p>
+                    <ul class="service-features">
+                        <li><i class="fas fa-check"></i> User Research</li>
+                        <li><i class="fas fa-check"></i> Wireframing</li>
+                        <li><i class="fas fa-check"></i> Prototyping</li>
+                        <li><i class="fas fa-check"></i> Design Systems</li>
+                    </ul>
+                    <a href="#contact" class="service-link">
+                        Learn More <i class="fas fa-arrow-right"></i>
+                        <div class="link-underline"></div>
+                    </a>
+                </div>
+                
+                <div class="service-card" data-aos="flip-left" data-aos-delay="200">
+                    <div class="service-icon">
+                        <i class="fas fa-code"></i>
+                        <div class="icon-bg"></div>
+                    </div>
+                    <h3>Website Development</h3>
+                    <p>Building fast, secure, and scalable websites using cutting-edge technologies and best practices.</p>
+                    <ul class="service-features">
+                        <li><i class="fas fa-check"></i> React/Vue.js</li>
+                        <li><i class="fas fa-check"></i> Node.js</li>
+                        <li><i class="fas fa-check"></i> Cloud Hosting</li>
+                        <li><i class="fas fa-check"></i> Performance Optimization</li>
+                    </ul>
+                    <a href="#contact" class="service-link">
+                        Learn More <i class="fas fa-arrow-right"></i>
+                        <div class="link-underline"></div>
+                    </a>
+                </div>
+                
+                <div class="service-card" data-aos="flip-left" data-aos-delay="300">
+                    <div class="service-icon">
+                        <i class="fas fa-desktop"></i>
+                        <div class="icon-bg"></div>
+                    </div>
+                    <h3>Branding</h3>
+                    <p>Developing comprehensive brand identities that resonate with your target audience across all touchpoints.</p>
+                    <ul class="service-features">
+                        <li><i class="fas fa-check"></i> Logo Design</li>
+                        <li><i class="fas fa-check"></i> Brand Guidelines</li>
+                        <li><i class="fas fa-check"></i> Marketing Materials</li>
+                        <li><i class="fas fa-check"></i> Brand Strategy</li>
+                    </ul>
+                    <a href="#contact" class="service-link">
+                        Learn More <i class="fas fa-arrow-right"></i>
+                        <div class="link-underline"></div>
+                    </a>
+                </div>
+                
+                <div class="service-card" data-aos="flip-left" data-aos-delay="400">
+                    <div class="service-icon">
+                        <i class="fas fa-search"></i>
+                        <div class="icon-bg"></div>
+                    </div>
+                    <h3>SEO Optimization</h3>
+                    <p>Improving your search engine rankings with data-driven SEO strategies and technical optimization.</p>
+                    <ul class="service-features">
+                        <li><i class="fas fa-check"></i> Keyword Research</li>
+                        <li><i class="fas fa-check"></i> Technical SEO</li>
+                        <li><i class="fas fa-check"></i> Content Strategy</li>
+                        <li><i class="fas fa-check"></i> Analytics</li>
+                    </ul>
+                    <a href="#contact" class="service-link">
+                        Learn More <i class="fas fa-arrow-right"></i>
+                        <div class="link-underline"></div>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Counters Section -->
+    <section class="counters">
+        <div class="container">
+            <div class="section-header">
+                <h2>Our Impact</h2>
+                <p>Numbers that speak for our commitment to excellence and global reach</p>
+            </div>
+            
+            <div class="counters-grid">
+                <div class="counter-item">
+                    <div class="counter-circle">
+                        <span class="counter-number" data-count="500">0</span><span>+</span>
+                    </div>
+                    <h3>Projects Completed</h3>
+                    <div class="counter-line"></div>
+                </div>
+                
+                <div class="counter-item">
+                    <div class="counter-circle">
+                        <span class="counter-number" data-count="200">0</span><span>+</span>
+                    </div>
+                    <h3>Happy Clients</h3>
+                    <div class="counter-line"></div>
+                </div>
+                
+                <div class="counter-item">
+                    <div class="counter-circle">
+                        <span class="counter-number" data-count="25">0</span><span>+</span>
+                    </div>
+                    <h3>Countries Served</h3>
+                    <div class="counter-line"></div>
+                </div>
+                
+                <div class="counter-item">
+                    <div class="counter-circle">
+                        <span class="counter-number" data-count="8">0</span><span>+</span>
+                    </div>
+                    <h3>Years Experience</h3>
+                    <div class="counter-line"></div>
+                </div>
+            </div>
+            
+            <div class="additional-stats">
+                <div class="stat-item">
+                    <div class="stat-number">99%</div>
+                    <div class="stat-label">Client Satisfaction</div>
+                </div>
+                <div class="stat-item">
+                    <div class="stat-number">24/7</div>
+                    <div class="stat-label">Support Available</div>
+                </div>
+                <div class="stat-item">
+                    <div class="stat-number">48h</div>
+                    <div class="stat-label">Average Response Time</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Portfolio Section -->
+    <section id="portfolio" class="portfolio">
+        <div class="container">
+            <div class="section-header">
+                <h2>Our Portfolio</h2>
+                <p>Showcasing our best work across different industries and technologies</p>
+            </div>
+            
+            <div class="portfolio-filters">
+                <button class="filter-btn active" data-filter="all">All Projects</button>
+                <button class="filter-btn" data-filter="web">Web Development</button>
+                <button class="filter-btn" data-filter="mobile">Mobile Apps</button>
+                <button class="filter-btn" data-filter="branding">Branding</button>
+                <button class="filter-btn" data-filter="ecommerce">E-commerce</button>
+            </div>
+            
+            <div class="portfolio-grid">
+                <div class="portfolio-item" data-category="ecommerce">
+                    <div class="portfolio-image">
+                        <img src="https://images.unsplash.com/photo-1556742049-0cfed4f6a45d?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Global E-commerce Platform">
+                        <div class="portfolio-overlay">
+                            <div class="portfolio-actions">
+                                <a href="#" class="portfolio-btn"><i class="fas fa-eye"></i></a>
+                                <a href="#" class="portfolio-btn"><i class="fas fa-external-link-alt"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="portfolio-content">
+                        <h3>Global E-commerce Platform</h3>
+                        <p>A scalable e-commerce solution serving 15+ countries</p>
+                        <div class="portfolio-tags">
+                            <span class="tag">React</span>
+                            <span class="tag">Node.js</span>
+                            <span class="tag">AWS</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="portfolio-item" data-category="mobile">
+                    <div class="portfolio-image">
+                        <img src="https://images.unsplash.com/photo-1512941937669-90a1b58e7e9c?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="FinTech Mobile App">
+                        <div class="portfolio-overlay">
+                            <div class="portfolio-actions">
+                                <a href="#" class="portfolio-btn"><i class="fas fa-eye"></i></a>
+                                <a href="#" class="portfolio-btn"><i class="fas fa-external-link-alt"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="portfolio-content">
+                        <h3>FinTech Mobile App</h3>
+                        <p>Secure banking app with biometric authentication</p>
+                        <div class="portfolio-tags">
+                            <span class="tag">React Native</span>
+                            <span class="tag">TypeScript</span>
+                            <span class="tag">Blockchain</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="portfolio-item" data-category="web">
+                    <div class="portfolio-image">
+                        <img src="https://images.unsplash.com/photo-1460925895917-afdab827c52f?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Corporate Website Redesign">
+                        <div class="portfolio-overlay">
+                            <div class="portfolio-actions">
+                                <a href="#" class="portfolio-btn"><i class="fas fa-eye"></i></a>
+                                <a href="#" class="portfolio-btn"><i class="fas fa-external-link-alt"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="portfolio-content">
+                        <h3>Corporate Website Redesign</h3>
+                        <p>Modern corporate website with advanced analytics</p>
+                        <div class="portfolio-tags">
+                            <span class="tag">Vue.js</span>
+                            <span class="tag">Nuxt</span>
+                            <span class="tag">Analytics</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="portfolio-item" data-category="branding">
+                    <div class="portfolio-image">
+                        <img src="https://images.unsplash.com/photo-1559757148-5c350d0d3c56?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Healthcare Brand Identity">
+                        <div class="portfolio-overlay">
+                            <div class="portfolio-actions">
+                                <a href="#" class="portfolio-btn"><i class="fas fa-eye"></i></a>
+                                <a href="#" class="portfolio-btn"><i class="fas fa-external-link-alt"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="portfolio-content">
+                        <h3>Healthcare Brand Identity</h3>
+                        <p>Complete brand identity for healthcare startup</p>
+                        <div class="portfolio-tags">
+                            <span class="tag">Brand Design</span>
+                            <span class="tag">Logo</span>
+                            <span class="tag">Guidelines</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="portfolio-item" data-category="web">
+                    <div class="portfolio-image">
+                        <img src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="SaaS Dashboard">
+                        <div class="portfolio-overlay">
+                            <div class="portfolio-actions">
+                                <a href="#" class="portfolio-btn"><i class="fas fa-eye"></i></a>
+                                <a href="#" class="portfolio-btn"><i class="fas fa-external-link-alt"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="portfolio-content">
+                        <h3>SaaS Dashboard</h3>
+                        <p>Data visualization dashboard for enterprise clients</p>
+                        <div class="portfolio-tags">
+                            <span class="tag">React</span>
+                            <span class="tag">D3.js</span>
+                            <span class="tag">Python</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="portfolio-item" data-category="mobile">
+                    <div class="portfolio-image">
+                        <img src="https://images.unsplash.com/photo-1488646953014-85cb44e25828?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Travel Booking App">
+                        <div class="portfolio-overlay">
+                            <div class="portfolio-actions">
+                                <a href="#" class="portfolio-btn"><i class="fas fa-eye"></i></a>
+                                <a href="#" class="portfolio-btn"><i class="fas fa-external-link-alt"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="portfolio-content">
+                        <h3>Travel Booking App</h3>
+                        <p>AI-powered travel planning and booking platform</p>
+                        <div class="portfolio-tags">
+                            <span class="tag">Flutter</span>
+                            <span class="tag">AI/ML</span>
+                            <span class="tag">APIs</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="portfolio-cta">
+                <a href="#contact" class="btn btn-primary">
+                    View All Projects <i class="fas fa-external-link-alt"></i>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section class="testimonials">
+        <div class="container">
+            <div class="section-header">
+                <h2>What Our Clients Say</h2>
+                <p>Trusted by companies worldwide for delivering exceptional digital solutions</p>
+            </div>
+            
+            <div class="swiper testimonials-swiper">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <div class="testimonial-card">
+                            <div class="testimonial-rating">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                            </div>
+                            <blockquote>
+                                "DigitalPro transformed our entire digital presence. Their team delivered exceptional results that exceeded our expectations. Our online conversions increased by 340% within 6 months."
+                            </blockquote>
+                            <div class="testimonial-author">
+                                <img src="https://images.unsplash.com/photo-1494790108755-2616b612b044?ixlib=rb-4.0.3&auto=format&fit=crop&w=150&q=80" alt="Sarah Johnson">
+                                <div class="author-info">
+                                    <h4>Sarah Johnson</h4>
+                                    <p>CEO, TechCorp Global</p>
+                                    <span>TechCorp • USA</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="swiper-slide">
+                        <div class="testimonial-card">
+                            <div class="testimonial-rating">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                            </div>
+                            <blockquote>
+                                "Working with DigitalPro was a game-changer for our startup. They understood our vision and brought it to life with stunning design and flawless functionality."
+                            </blockquote>
+                            <div class="testimonial-author">
+                                <img src="https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?ixlib=rb-4.0.3&auto=format&fit=crop&w=150&q=80" alt="Marco Rodriguez">
+                                <div class="author-info">
+                                    <h4>Marco Rodriguez</h4>
+                                    <p>Marketing Director</p>
+                                    <span>Innovation Labs • Spain</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="swiper-slide">
+                        <div class="testimonial-card">
+                            <div class="testimonial-rating">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                            </div>
+                            <blockquote>
+                                "The level of professionalism and technical expertise from DigitalPro is unmatched. They delivered our complex financial platform on time and within budget."
+                            </blockquote>
+                            <div class="testimonial-author">
+                                <img src="https://images.unsplash.com/photo-1438761681033-6461ffad8d80?ixlib=rb-4.0.3&auto=format&fit=crop&w=150&q=80" alt="Priya Patel">
+                                <div class="author-info">
+                                    <h4>Priya Patel</h4>
+                                    <p>Founder & CTO</p>
+                                    <span>FinanceFlow • India</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-pagination"></div>
+                <div class="swiper-button-prev"></div>
+                <div class="swiper-button-next"></div>
+            </div>
+            
+            <div class="testimonial-stats">
+                <div class="stat-item">
+                    <div class="stat-number">4.9/5</div>
+                    <div class="stat-label">Average Rating</div>
+                </div>
+                <div class="stat-item">
+                    <div class="stat-number">98%</div>
+                    <div class="stat-label">Client Retention</div>
+                </div>
+                <div class="stat-item">
+                    <div class="stat-number">50+</div>
+                    <div class="stat-label">Five Star Reviews</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Global Reach Section -->
+    <section class="global-reach">
+        <div class="container">
+            <div class="section-header">
+                <h2>Global Presence, Local Expertise</h2>
+                <p>Serving clients across 25+ countries with a deep understanding of local markets and international standards</p>
+            </div>
+            
+            <div class="global-content">
+                <div class="global-map">
+                    <div class="map-container">
+                        <div class="world-map">
+                            <div class="continent north-america">
+                                <div class="office-pin active" data-office="San Francisco">
+                                    <i class="fas fa-map-marker-alt"></i>
+                                    <span class="pin-label">San Francisco</span>
+                                </div>
+                                <div class="office-pin" data-office="New York">
+                                    <i class="fas fa-map-marker-alt"></i>
+                                    <span class="pin-label">New York</span>
+                                </div>
+                            </div>
+                            <div class="continent europe">
+                                <div class="office-pin active" data-office="London">
+                                    <i class="fas fa-map-marker-alt"></i>
+                                    <span class="pin-label">London</span>
+                                </div>
+                                <div class="office-pin" data-office="Berlin">
+                                    <i class="fas fa-map-marker-alt"></i>
+                                    <span class="pin-label">Berlin</span>
+                                </div>
+                            </div>
+                            <div class="continent asia">
+                                <div class="office-pin active" data-office="Singapore">
+                                    <i class="fas fa-map-marker-alt"></i>
+                                    <span class="pin-label">Singapore</span>
+                                </div>
+                                <div class="office-pin" data-office="Tokyo">
+                                    <i class="fas fa-map-marker-alt"></i>
+                                    <span class="pin-label">Tokyo</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="global-stats">
+                    <div class="stat-row">
+                        <div class="global-stat">
+                            <div class="stat-icon">
+                                <i class="fas fa-globe"></i>
+                            </div>
+                            <div class="stat-info">
+                                <div class="stat-number">25+</div>
+                                <div class="stat-label">Countries Served</div>
+                            </div>
+                        </div>
+                        <div class="global-stat">
+                            <div class="stat-icon">
+                                <i class="fas fa-users"></i>
+                            </div>
+                            <div class="stat-info">
+                                <div class="stat-number">150+</div>
+                                <div class="stat-label">Team Members</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="stat-row">
+                        <div class="global-stat">
+                            <div class="stat-icon">
+                                <i class="fas fa-clock"></i>
+                            </div>
+                            <div class="stat-info">
+                                <div class="stat-number">24/7</div>
+                                <div class="stat-label">Support Coverage</div>
+                            </div>
+                        </div>
+                        <div class="global-stat">
+                            <div class="stat-icon">
+                                <i class="fas fa-language"></i>
+                            </div>
+                            <div class="stat-info">
+                                <div class="stat-number">15+</div>
+                                <div class="stat-label">Languages</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="office-details">
+                <h3>Our Office Locations</h3>
+                <div class="offices-grid">
+                    <div class="office-item">
+                        <div class="office-flag">🇺🇸</div>
+                        <div class="office-info">
+                            <h4>San Francisco HQ</h4>
+                            <p>123 Tech Street, CA 94102</p>
+                            <div class="office-time">
+                                <i class="fas fa-clock"></i>
+                                <span id="sf-time">9:30 AM PST</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="office-item">
+                        <div class="office-flag">🇬🇧</div>
+                        <div class="office-info">
+                            <h4>London Office</h4>
+                            <p>456 Design Ave, EC1A 1BB</p>
+                            <div class="office-time">
+                                <i class="fas fa-clock"></i>
+                                <span id="london-time">5:30 PM GMT</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="office-item">
+                        <div class="office-flag">🇸🇬</div>
+                        <div class="office-info">
+                            <h4>Singapore Hub</h4>
+                            <p>789 Innovation Blvd, 018956</p>
+                            <div class="office-time">
+                                <i class="fas fa-clock"></i>
+                                <span id="singapore-time">1:30 AM SGT</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Careers Section -->
+    <section id="careers" class="careers">
+        <div class="container">
+            <div class="section-header">
+                <h2>Join Our Global Team</h2>
+                <p>Be part of a diverse team of creatives, developers, and strategists shaping the future of digital experiences</p>
+            </div>
+            
+            <div class="careers-content">
+                <div class="careers-hero">
+                    <div class="careers-text">
+                        <h3>Why Work With Us?</h3>
+                        <ul class="benefits-list">
+                            <li><i class="fas fa-check"></i> Competitive salary & equity packages</li>
+                            <li><i class="fas fa-check"></i> Flexible remote/hybrid work options</li>
+                            <li><i class="fas fa-check"></i> $3,000 annual learning & development budget</li>
+                            <li><i class="fas fa-check"></i> Comprehensive health & wellness benefits</li>
+                            <li><i class="fas fa-check"></i> Unlimited PTO policy</li>
+                            <li><i class="fas fa-check"></i> Top-tier equipment & workspace setup</li>
+                        </ul>
+                        <a href="#contact" class="btn btn-primary">
+                            <i class="fas fa-paper-plane"></i>
+                            View All Positions
+                        </a>
+                    </div>
+                    <div class="team-photo">
+                        <img src="https://images.unsplash.com/photo-1522071820081-009f0129c71c?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80" alt="DigitalPro Team">
+                    </div>
+                </div>
+                
+                <div class="open-positions">
+                    <h3>Current Openings</h3>
+                    <div class="positions-grid">
+                        <div class="position-card">
+                            <div class="position-header">
+                                <div class="position-title">
+                                    <h4>Senior UI/UX Designer</h4>
+                                    <span class="position-type">Full-time</span>
+                                </div>
+                                <div class="position-location">
+                                    <i class="fas fa-map-marker-alt"></i>
+                                    San Francisco / Remote
+                                </div>
+                            </div>
+                            <p>Lead design for complex web applications and mobile experiences. 5+ years experience with Figma, user research, and design systems.</p>
+                            <div class="position-tags">
+                                <span class="tag">Figma</span>
+                                <span class="tag">Design Systems</span>
+                                <span class="tag">User Research</span>
+                            </div>
+                            <a href="#contact" class="position-apply">Apply Now</a>
+                        </div>
+                        
+                        <div class="position-card">
+                            <div class="position-header">
+                                <div class="position-title">
+                                    <h4>Full Stack Developer</h4>
+                                    <span class="position-type">Full-time</span>
+                                </div>
+                                <div class="position-location">
+                                    <i class="fas fa-map-marker-alt"></i>
+                                    London / Hybrid
+                                </div>
+                            </div>
+                            <p>Build scalable web applications using React, Node.js, and cloud technologies. 4+ years experience with modern JavaScript frameworks.</p>
+                            <div class="position-tags">
+                                <span class="tag">React</span>
+                                <span class="tag">Node.js</span>
+                                <span class="tag">AWS</span>
+                            </div>
+                            <a href="#contact" class="position-apply">Apply Now</a>
+                        </div>
+                        
+                        <div class="position-card">
+                            <div class="position-header">
+                                <div class="position-title">
+                                    <h4>Project Manager</h4>
+                                    <span class="position-type">Full-time</span>
+                                </div>
+                                <div class="position-location">
+                                    <i class="fas fa-map-marker-alt"></i>
+                                    Singapore / Remote
+                                </div>
+                            </div>
+                            <p>Manage multiple client projects from conception to delivery. Experience with Agile methodologies and client relationship management.</p>
+                            <div class="position-tags">
+                                <span class="tag">Agile</span>
+                                <span class="tag">Scrum</span>
+                                <span class="tag">Client Relations</span>
+                            </div>
+                            <a href="#contact" class="position-apply">Apply Now</a>
+                        </div>
+                        
+                        <div class="position-card">
+                            <div class="position-header">
+                                <div class="position-title">
+                                    <h4>DevOps Engineer</h4>
+                                    <span class="position-type">Contract</span>
+                                </div>
+                                <div class="position-location">
+                                    <i class="fas fa-map-marker-alt"></i>
+                                    Remote
+                                </div>
+                            </div>
+                            <p>Optimize deployment pipelines and cloud infrastructure. Experience with Docker, Kubernetes, and CI/CD best practices.</p>
+                            <div class="position-tags">
+                                <span class="tag">Docker</span>
+                                <span class="tag">Kubernetes</span>
+                                <span class="tag">CI/CD</span>
+                            </div>
+                            <a href="#contact" class="position-apply">Apply Now</a>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="culture-section">
+                    <h3>Our Culture</h3>
+                    <div class="culture-grid">
+                        <div class="culture-item">
+                            <div class="culture-icon">
+                                <i class="fas fa-lightbulb"></i>
+                            </div>
+                            <h4>Innovation First</h4>
+                            <p>We encourage experimentation and creative problem-solving in everything we do.</p>
+                        </div>
+                        <div class="culture-item">
+                            <div class="culture-icon">
+                                <i class="fas fa-users"></i>
+                            </div>
+                            <h4>Collaborative Spirit</h4>
+                            <p>Cross-functional teams working together to deliver exceptional results.</p>
+                        </div>
+                        <div class="culture-item">
+                            <div class="culture-icon">
+                                <i class="fas fa-chart-line"></i>
+                            </div>
+                            <h4>Growth Mindset</h4>
+                            <p>Continuous learning and professional development are core to our values.</p>
+                        </div>
+                        <div class="culture-item">
+                            <div class="culture-icon">
+                                <i class="fas fa-balance-scale"></i>
+                            </div>
+                            <h4>Work-Life Balance</h4>
+                            <p>We believe in sustainable productivity and personal well-being.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <div class="section-header">
+                <h2>Let's Start Your Project</h2>
+                <p>Ready to transform your digital presence? Get in touch with our team for a free consultation.</p>
+            </div>
+            
+            <div class="contact-content">
+                <div class="contact-form">
+                    <h3>Send us a message</h3>
+                    <form id="contactForm">
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="name">Your Name *</label>
+                                <input type="text" id="name" name="name" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="email">Email Address *</label>
+                                <input type="email" id="email" name="email" required>
+                            </div>
+                        </div>
+                        
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="company">Company Name</label>
+                                <input type="text" id="company" name="company">
+                            </div>
+                            <div class="form-group">
+                                <label for="budget">Project Budget</label>
+                                <select id="budget" name="budget">
+                                    <option value="">Select Budget Range</option>
+                                    <option value="10k-25k">$10k - $25k</option>
+                                    <option value="25k-50k">$25k - $50k</option>
+                                    <option value="50k-100k">$50k - $100k</option>
+                                    <option value="100k-250k">$100k - $250k</option>
+                                    <option value="250k+">$250k+</option>
+                                </select>
+                            </div>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="message">Project Description *</label>
+                            <textarea id="message" name="message" rows="6" required placeholder="Tell us about your project, goals, and timeline..."></textarea>
+                        </div>
+                        
+                        <button type="submit" class="btn btn-primary">
+                            <span class="btn-text">Send Message</span>
+                            <span class="btn-loading" style="display: none;">Sending...</span>
+                        </button>
+                    </form>
+                </div>
+                
+                <div class="contact-info">
+                    <div class="contact-cards">
+                        <div class="contact-card">
+                            <div class="contact-icon">
+                                <i class="fas fa-envelope"></i>
+                            </div>
+                            <h4>Email Us</h4>
+                            <p>hello@digitalpro.com</p>
+                            <small>support@digitalpro.com</small>
+                        </div>
+                        
+                        <div class="contact-card">
+                            <div class="contact-icon">
+                                <i class="fas fa-phone"></i>
+                            </div>
+                            <h4>Call Us</h4>
+                            <p>+1 (555) 123-4567</p>
+                            <small>+44 20 7946 0958</small>
+                        </div>
+                        
+                        <div class="contact-card">
+                            <div class="contact-icon">
+                                <i class="fas fa-map-marker-alt"></i>
+                            </div>
+                            <h4>Visit Us</h4>
+                            <p>123 Tech Street</p>
+                            <small>San Francisco, CA 94102</small>
+                        </div>
+                        
+                        <div class="contact-card">
+                            <div class="contact-icon">
+                                <i class="fas fa-clock"></i>
+                            </div>
+                            <h4>Business Hours</h4>
+                            <p>Mon - Fri: 9:00 - 18:00</p>
+                            <small>Sat: 10:00 - 16:00</small>
+                        </div>
+                    </div>
+                    
+                    <div class="contact-map">
+                        <div class="map-placeholder">
+                            <div class="map-icon">📍</div>
+                            <h4>San Francisco, CA</h4>
+                            <p>123 Tech Street, 94102</p>
+                        </div>
+                    </div>
+                    
+                    <div class="response-time">
+                        <h4>Quick Response Guaranteed</h4>
+                        <p>We typically respond to all inquiries within 2-4 hours during business hours. For urgent matters, please call us directly.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <div class="footer-logo">
+                        <h1>Digital<span>Pro</span></h1>
+                    </div>
+                    <p>We're a global digital agency specializing in creating exceptional digital experiences that drive business growth across 25+ countries.</p>
+                    
+                    <div class="social-links">
+                        <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+                        <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+                        <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                    </div>
+                </div>
+                
+                <div class="footer-section">
+                    <h3>Services</h3>
+                    <ul>
+                        <li><a href="#services">UI/UX Design</a></li>
+                        <li><a href="#services">Web Development</a></li>
+                        <li><a href="#services">Mobile Apps</a></li>
+                        <li><a href="#services">E-commerce</a></li>
+                        <li><a href="#services">SEO Services</a></li>
+                        <li><a href="#services">Branding</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-section">
+                    <h3>Company</h3>
+                    <ul>
+                        <li><a href="#">About Us</a></li>
+                        <li><a href="#">Our Team</a></li>
+                        <li><a href="#careers">Careers</a></li>
+                        <li><a href="#portfolio">Case Studies</a></li>
+                        <li><a href="#">Blog</a></li>
+                        <li><a href="#">News</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-section">
+                    <h3>Support</h3>
+                    <ul>
+                        <li><a href="#contact">Contact Us</a></li>
+                        <li><a href="#">Help Center</a></li>
+                        <li><a href="#">Documentation</a></li>
+                        <li><a href="#">Privacy Policy</a></li>
+                        <li><a href="#">Terms of Service</a></li>
+                        <li><a href="#">Cookie Policy</a></li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="offices-section">
+                <h3>Our Global Offices</h3>
+                <div class="offices-grid">
+                    <div class="office-card">
+                        <h4>San Francisco</h4>
+                        <p><i class="fas fa-map-marker-alt"></i> 123 Tech Street, CA 94102</p>
+                        <p><i class="fas fa-phone"></i> +1 (555) 123-4567</p>
+                    </div>
+                    <div class="office-card">
+                        <h4>London</h4>
+                        <p><i class="fas fa-map-marker-alt"></i> 456 Design Ave, EC1A 1BB</p>
+                        <p><i class="fas fa-phone"></i> +44 20 7946 0958</p>
+                    </div>
+                    <div class="office-card">
+                        <h4>Singapore</h4>
+                        <p><i class="fas fa-map-marker-alt"></i> 789 Innovation Blvd, 018956</p>
+                        <p><i class="fas fa-phone"></i> +65 6123 4567</p>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="newsletter-section">
+                <div class="newsletter-content">
+                    <h3>Stay Updated</h3>
+                    <p>Get the latest insights on digital trends, design tips, and industry news.</p>
+                    <div class="newsletter-form">
+                        <input type="email" placeholder="Enter your email" id="newsletterEmail">
+                        <button type="button" class="btn btn-primary" id="newsletterBtn">Subscribe</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <div class="footer-bottom">
+            <div class="container">
+                <div class="footer-bottom-content">
+                    <p>&copy; 2025 DigitalPro. All rights reserved. Built with ❤️ for global businesses.</p>
+                    <button class="scroll-to-top" id="scrollToTop" aria-label="Scroll to top">
+                        <i class="fas fa-arrow-up"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="https://unpkg.com/swiper@11/swiper-bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.16/typed.min.js"></script>
+    <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/particles.js/2.0.0/particles.min.js"></script> -->
+    <script src="./script.js"></script>
+</body>
+</html>
